@@ -80,6 +80,10 @@
 				<%@include file="contact.jsp"%>
 			</c:if>
 			
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
 			<!-- Load only when user clicks login -->
 			<c:if test="${userClickLogin == true }">
 				<%@include file="login.jsp"%>
